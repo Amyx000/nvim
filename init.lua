@@ -1,0 +1,13 @@
+require "amyx.options"
+require "amyx.keymaps"
+require "amyx.plugins"
+-- require "amyx.colorscheme"
+vim.cmd "colorscheme darkplus"
+require "amyx.cmp"
+require "amyx.telescope"
+require "amyx.treesitter"
+require "amyx.gitsigns"
+require "amyx.autopair"
+require "amyx.bufferline"
+require "amyx.lualine"
+
