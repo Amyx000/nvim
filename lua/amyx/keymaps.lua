@@ -30,7 +30,7 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -74,6 +74,9 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 local builtin = require('telescope.builtin')
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
 vim.keymap.set('n', '<c-p>', builtin.find_files, {})
+
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
+
 
 -- Tabs
 keymap("n", "<S-l>", ":bnext<CR>", opts)
